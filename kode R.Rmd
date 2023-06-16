@@ -4,12 +4,92 @@ output: html_notebook
 ---
 
 
+
+
+
+
 ```{r}
-library("googlesheets4")
+library(RCurl)
+library(tidyverse)
 
-df<- read_sheet("https://docs.google.com/spreadsheets/d/1n_P0Bl7s69K8AUulActqpiuzJNXmJqrPnt3QWzwn0Gc/edit?resourcekey#gid=1783586848")
 
 
-df1
+library(tidyverse)
+mydata <- read.csv("https://github.com/gioprana89/read_data/blob/0d43795d646325006bc756d5c71be497e64e3111/Lembar%20Kerja%20Kinerja%20Dosen%20-%20Form%20Responses%201.csv", header = T, sep = ",")
+
+
+mydata
 ```
+
+
+```{r}
+library(RCurl)
+library(tidyverse)
+
+
+library(RCurl)
+x <- getURL("https://raw.github.com/aronlindberg/latent_growth_classes/master/LGC_data.csv", sep = ",")
+y <- read.csv(text = x)
+
+
+
+```
+
+
+
+
+readr::read_csv("https://raw.github.com/user/repository/branch/file.name")
+
+```{r}
+library(RCurl)
+library(tidyverse)
+
+
+
+library(tidyverse)
+mydata <- read_csv2("https://raw.githubusercontent.com/datatto/AU25-de-Mayo/master/AU_F_Properati_v2.csv")
+
+
+mydata
+
+```
+
+
+
+
+```{r}
+list.files()
+
+read.csv("Lembar Kerja Kinerja Dosen - Form Responses 1.csv", header = T, sep = ",")
+```
+
+
+
+
+
+
+```{r}
+library(readr)  # for read_csv
+library(knitr)  # for kable
+myfile <- "https://github.com/gioprana89/read_data/main/Lembar Kerja Kinerja Dosen - Form Responses 1.csv"
+
+Affairs <- read_csv(myfile)
+
+```
+
+
+https://github.com/gioprana89/read_data.git
+
+
+
+Lembar Kerja Kinerja Dosen - Form Responses 1.csv
+
+
+
+
+
+
+
+
+
 
