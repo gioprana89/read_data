@@ -71,6 +71,7 @@ read.csv("Lembar Kerja Kinerja Dosen - Form Responses 1.csv", header = T, sep = 
 ```{r}
 library(readr)  # for read_csv
 library(knitr)  # for kable
+
 myfile <- "https://github.com/gioprana89/read_data/main/Lembar Kerja Kinerja Dosen - Form Responses 1.csv"
 
 Affairs <- read_csv(myfile)
@@ -83,6 +84,68 @@ https://github.com/gioprana89/read_data.git
 
 
 Lembar Kerja Kinerja Dosen - Form Responses 1.csv
+
+
+```{r}
+library(readr)  # for read_csv
+library(knitr)  # for kable
+myfile <- "https://raw.github.com/sebastiansauer/Daten_Unterricht/master/Affairs.csv"
+
+Affairs <- read_csv(myfile)
+
+Affairs
+
+```
+
+
+
+
+```{r}
+
+download.file("https://raw.github.com/aronlindberg/latent_growth_classes/master/LGC_data.csv", 
+    destfile = "/tmp/test.csv", method = "curl")
+
+```
+
+
+
+```{r}
+
+
+urlfile<-'https://raw.github.com/aronlindberg/latent_growth_classes/master/LGC_data.csv'
+dsin<-read.csv(urlfile)
+
+dsin
+```
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+
+
+urlfile<-'https://raw.github.com/gioprana89/read_data/main/data_csv.csv'
+dsin<-read.csv(urlfile)
+
+dsin
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
