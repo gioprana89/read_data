@@ -1,0 +1,15 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library("googlesheets4")
+
+df<- read_sheet("https://docs.google.com/spreadsheets/d/1n_P0Bl7s69K8AUulActqpiuzJNXmJqrPnt3QWzwn0Gc/edit?resourcekey#gid=1783586848")
+
+
+df1
+```
+
